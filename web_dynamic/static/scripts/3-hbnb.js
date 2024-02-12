@@ -28,7 +28,6 @@ $(document).ready(function () {
   });
   updateCheckboxes();
   updateAmenitiesList();
-  console.log('im her');
   $.get('http://0.0.0.0:5001/api/v1/status/', function (response, textStatus) {
     if (textStatus === 'success') {
       if (response.status === 'OK') {
